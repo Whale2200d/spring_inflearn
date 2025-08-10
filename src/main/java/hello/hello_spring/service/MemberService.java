@@ -2,6 +2,8 @@ package hello.hello_spring.service;
 
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +12,7 @@ import java.util.Optional;
  * 서비스 계층은 어플리케이션의 핵심 비즈니스 규칙을 구현한다.
  * 사용자의 요청을 처리하기 위해 리포지토리 등을 활용한다.
  */
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 

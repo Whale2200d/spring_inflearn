@@ -1,6 +1,6 @@
 package hello.hello_spring.controller;
 
-import hello.hello_spring.domian.Member;
+import hello.hello_spring.domain.Member;
 import hello.hello_spring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
